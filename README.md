@@ -2,33 +2,13 @@
 SQL-based e-commerce customer behavior and sales funnel analysis, covering data validation, customer journey, conversion rates, drop-off analysis, and actionable business insights.
 ```mermaid
 flowchart TD
-    ReadMe[RAW EVENT TABLE] --> Guides[Guides]
-    ReadMe --> APIRef[API Reference]
+ReadMe[RAW EVENT TABLE] --> A(sequential_funnel_users VIEW)
+    ReadMe-->B(Q2 Conversion Rates)
+    ReadMe-->C(Q3 Drop-off)
+    ReadMe-->D(Q4 Traffic Sources)
+    ReadMe-->E(Q5 A/B-style Analysis)
     
-    Guides --> Editor[Editor UI]
-    Editor --> Slash[Slash Commands]
-    Slash --> Mermaid[Mermaid Diagrams]
-    Slash --> Other[Other Blocks]
-    
-    APIRef --> OpenAPI[OpenAPI Spec]
-    APIRef --> Manual[Manual Editor]
-    
-    style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
-    style Mermaid fill:#bbf,stroke:#333,stroke-width:2px
+    style ReadMe fill:#f9f,stroke:#333,stroke-width:2px
+    style Mermaid fill:#bbf,stroke:#333,stroke-width:1px
 ```
-RAW EVENT TABLE
-      │
-      ▼
-sequential_funnel_users VIEW
-      │
-      │  one row = one user
-      │
-      ├──────────────► Q1 Funnel Counts
-      │
-      ├──────────────► Q2 Conversion Rates
-      │
-      ├──────────────► Q3 Drop-off
-      │
-      ├──────────────► Q4 Traffic Sources
-      │
-      └──────────────► Q5 A/B-style Analysis
+
