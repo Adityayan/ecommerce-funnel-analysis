@@ -1,7 +1,7 @@
 # E-Commerce-funnel-analysis
 SQL-based e-commerce customer behaviour and sales funnel analysis, covering data validation, customer journey, conversion rates, drop-off analysis, and actionable business insights.
 ## Analytical Workflow
-1. RAW DATA
+### RAW DATA
 
 The raw table contains individual user events such as:
 
@@ -15,7 +15,7 @@ Each row represents an event performed by a user.
 
 **Goal**: Validate and understand the raw data before performing analysis.
 
-2. sequential_funnel VIEW
+### sequential_funnel VIEW
 
 The raw event data is transformed into a user-level sequential funnel.
 
