@@ -1,6 +1,10 @@
 # E-Commerce-funnel-analysis
 SQL-based e-commerce customer behaviour and sales funnel analysis, covering data validation, customer journey, conversion rates, drop-off analysis, and actionable business insights.
 ## Analytical Workflow
+This is my *SQL Mental Model*
+- **VIEW = reusable analytical layer**
+- **CTE = temporary intermediate step**
+
 ### RAW DATA
 
 The raw table contains individual user events such as:
