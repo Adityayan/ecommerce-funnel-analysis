@@ -1,9 +1,44 @@
 # E-Commerce-funnel-analysis
 SQL-based e-commerce customer behaviour and sales funnel analysis, covering data validation, customer journey, conversion rates, drop-off analysis, and actionable business insights.
+
+## Entity Relationship Diagram
+
+```mermaid
+erDiagram
+  USERS ||--o{ USER_EVENT : generates
+  PRODUCT ||--o{ USER_EVENT : "viewed in"
+  TRAFFIC_SOURCE ||--o{ USER_EVENT : refers
+
+  USERS {
+    int user_id PK
+  }
+  PRODUCT {
+    int product_id PK
+  }
+  TRAFFIC_SOURCE {
+    string source PK
+  }
+  USER_EVENT {
+    int event_id PK
+    int user_id FK
+    string event_type
+    timestamp event_date
+    int product_id FK
+    float amount
+    string traffic_source FK
+  }
+```
+
+> Note: `SEQUENTIAL_FUNNEL_USERS` is a derived SQL view built from `USER_EVENT`
+> (pivoted by `user_id`), not a relational entity with a foreign key — so it's
+> intentionally left out of this ERD. See the pipeline/lineage diagram
+> separately for how the view is built.
+
 ## Analytical Workflow
 This is my *SQL Mental Model*
 - **VIEW = reusable analytical layer**
 - **CTE = temporary intermediate step**
+
 
 ### RAW DATA
 
