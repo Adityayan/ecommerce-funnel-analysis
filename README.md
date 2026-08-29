@@ -1,6 +1,6 @@
 # ecommerce-funnel-analysis
 SQL-based e-commerce customer behavior and sales funnel analysis, covering data validation, customer journey, conversion rates, drop-off analysis, and actionable business insights.
-
+```mermaid
 flowchart TD
     ReadMe[RAW EVENT TABLE] --> Guides[Guides]
     ReadMe --> APIRef[API Reference]
@@ -15,6 +15,7 @@ flowchart TD
     
     style ReadMe fill:#f9f,stroke:#333,stroke-width:4px
     style Mermaid fill:#bbf,stroke:#333,stroke-width:2px
+```
 RAW EVENT TABLE
       │
       ▼
