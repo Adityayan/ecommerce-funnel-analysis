@@ -9,6 +9,6 @@ ReadMe[RAW EVENT TABLE] --> A(sequential_funnel_users VIEW)
     ReadMe-->E(Q5 A/B-style Analysis)
     
     style ReadMe fill:#f9f,stroke:#333,stroke-width:2px
-    style Mermaid fill:#bbf,stroke:#333,stroke-width:1px
+    
 ```
 
